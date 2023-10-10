@@ -18,16 +18,17 @@ function escrevendoLetra(){
 
 escrevendoLetra()
 
-function MenuMobol(){
-    const ativaMenu = document.querySelector('.fa-bars')
-    const navMenu = document.querySelector('header .navegacao-primaria')
+
+const ativaMenu = document.querySelector('.fa-bars')
+const navMenu = document.querySelector('header .navegacao-primaria')
 
 
-    ativaMenu.addEventListener('click', ()=>{
-        ativaMenu.classList.toggle('fa-x')
-        navMenu.classList.toggle('ativado')
-    })
-}
+ativaMenu.addEventListener('click', ()=>{
+    ativaMenu.classList.toggle('fa-x')
+    navMenu.classList.toggle('ativado')
+})
+
+
 
 
 function sobreMim() {
@@ -86,18 +87,24 @@ const listaAll = document.querySelector('.projetos-armazenamento ul li')
 const buttonGeral = document.querySelector('.projetos-modelos ul li')
 const buttonAll = document.querySelector('.projetos-modelos .all')
 
+listaAll.forEach((item)=>{
+    item.classList.add('ativo')
+})  
+
 function removeClick(index){
     buttonGeral.forEach((item)=>{
         item.classList.remove('ativo')
     })
     buttonGeral[index].classList.add('ativo')
+
+    buttonGeral.forEach((event,index)=>{
+        event.addEventListener('click', ()=>{
+         removeClick(index)
+        })
+    })
 }
 
-buttonGeral.forEach((event,index)=>{
-    event.addEventListener('click', ()=>{
-        removeClick(index)
-    })
-})
+removeClick()
 
 function showLista(lista, buttom = "all"){
     lista.forEach((item)=>{

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300; 1.400;1.500;1.600;1.700;1.800;1.900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
 @import url('https://fonts.googleapis.com/css2? family= Berkshire+Swash & display=swap');
 
@@ -27,11 +27,13 @@ header {
 }
 
 header h1 {
+    font-family: 'Galada', cursive;
     color: #47c91f;
 }
 
 header span {
     color: #fff;
+    font-family: 'Galada', cursive;
 }
 
 header .navegacao-primaria {
@@ -159,9 +161,9 @@ main .sobre {
 
 .sobre-titulo h1 {
     font-size: 2.5rem;
-    color: #359717;
+    color: #4de71e;
     margin-bottom: 15px;
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Galada', cursive;
 }
 
 .sobre-titulo p {
