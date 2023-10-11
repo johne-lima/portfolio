@@ -82,22 +82,25 @@ function sobreMim() {
 
 sobreMim()
 
-
+/*
 const listaAll = document.querySelector('.projetos-armazenamento ul li')
 const buttonGeral = document.querySelector('.projetos-modelos ul li')
-const buttonAll = document.querySelector('.projetos-modelos .all')
 
-listaAll.forEach((item)=>{
+const buttonAll = document.querySelector('.projetos-modelos .all')
+const lt = Array.from(listaAll)
+const btnG = Array.from(buttonGeral)
+
+lt.forEach((item)=>{
     item.classList.add('ativo')
 })  
 
 function removeClick(index){
-    buttonGeral.forEach((item)=>{
-        item.classList.remove('ativo')
+    btnG.forEach((item)=>{
+        item.classList.remove('.ativo')
     })
-    buttonGeral[index].classList.add('ativo')
+    buttonGeral[index].classList.add('.ativo')
 
-    buttonGeral.forEach((event,index)=>{
+    btnG.forEach((event,index)=>{
         event.addEventListener('click', ()=>{
          removeClick(index)
         })
@@ -136,7 +139,7 @@ function showLista(lista, buttom = "all"){
     }
 }
 
-buttonGeral.forEach((item)=>{
+btnG.forEach((item)=>{
     item.addEventListener('click', (e)=>{   
         let currentButton = e.target
         if(currentButton.classList.contains('all')){
@@ -156,3 +159,44 @@ buttonGeral.forEach((item)=>{
         }
     })
 })
+*/
+
+
+let sections = document.querySelectorAll('section')
+let navLinks = document.querySelector('header nav a')
+const lk = Array.from(navLinks)
+
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY 
+        let offset = sec.offsetTop 
+        let height = sec.offsetHeight 
+        let id = sec.getAttribute('id')
+
+        if (top >= offset && top < offset + height) {
+            lk.forEach(links => {
+                links.classList.remove('active')
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
+            })
+        }
+    })
+}
+
+
+const btn = document.getElementById("btnTop")
+btn.addEventListener("click", function(){
+    window.scrollTo(0,0)
+})
+
+document.addEventListener('scroll', ocultar)
+
+function ocultar(){
+    if(window.scrollY > 10) {
+        btn.style.display = "flex"
+    } else {
+        btn.style.display = "none"
+    }
+}
+
+ocultar()
