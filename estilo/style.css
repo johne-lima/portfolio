@@ -14,24 +14,35 @@ body {
     max-width: 1200x;
     margin: 0 auto;
     background-color: #000;
+    scroll-behavior: smooth;
 }
 
 /* HEADER */
 
 header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #000;
+    margin-top: 10px;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-header h1 {
+header h1.logo a {
+    text-decoration: none;
+    font-size: 2rem;
     font-family: 'Galada', cursive;
     color: #47c91f;
+    text-shadow: 0px 0px 5px #ffffffa4;
 }
 
-header span {
+header a span.logo{
+    text-decoration: none;
     color: #fff;
     font-family: 'Galada', cursive;
 }
@@ -44,9 +55,12 @@ header .navegacao-primaria {
 
 header .navegacao-primaria li a {
     color: #fff;
-    width: 0px;
-    height: 0px;
     font-size: 1.3rem;
+    font-weight: 600;
+}
+
+header .navegacao-primaria li a:hover {
+    color: #4de71e;
 }
 
 header .navegacao-primaria li a::after {
@@ -55,7 +69,7 @@ header .navegacao-primaria li a::after {
     height: 0px;
     display: block;
     border-bottom: 4px solid transparent;
-    transition: .9s;
+    transition: .5s;
 }
 
 header .navegacao-primaria li a:hover::after {
@@ -68,7 +82,7 @@ header .navegacao-primaria li a:hover::after {
 
 /* DOWNLOAD CV SECAO */
 
-.section-div {
+.inicio {
     animation: inicializar .7s forwards;
     background-color: #000;
     display: grid;
@@ -77,35 +91,42 @@ header .navegacao-primaria li a:hover::after {
     align-items: center;
     gap: 60px;
     padding: 60px;
+    margin-top: 60px;
 }
 
-.section-div div {
+.inicio div {
     margin-top: 120px;
     align-items: start;
     display: grid;
     gap: 30px;
 }
 
-.section-div div h2 {
+.inicio div h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #f7f7f7;
 }
 
-.section-div div p {
+.inicio div p {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: #f7f7f7;
 }
 
-.section-div div a {
+.inicio div a {
     justify-self: start;
     color: #fff;
     padding: 15px 40px;
     border: 2px solid #fff;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
-.section-div img {
+.inicio div a:hover {
+    background-color: #111;
+}
+
+.inicio img {
     max-width: 100%;
 }
 
@@ -277,6 +298,21 @@ main .sobre {
     }
 }
 
+#btnTop {
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
 /* RESPONSIVO */
 
 @media(max-width: 700px) {
@@ -423,11 +459,11 @@ main .sobre {
 
 /* EXPERIENCIAS */
 
-.my-resume {
+.resumo {
     color: #fff;
 }
 
-.resume-generica {
+.resumo-generico {
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -436,7 +472,7 @@ main .sobre {
     align-items: start;
 }
 
-.resume-generica h2 {
+.resumo-generico h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     background-color: #359717;
@@ -445,7 +481,7 @@ main .sobre {
     border-radius: 3px;
 }
 
-.resume-generica h2 i {
+.resumo-generico h2 i {
     margin-right: 10px;
 }
 
@@ -471,7 +507,7 @@ main .sobre {
     justify-content: center;
 }
 
-.resume-generica .experiencia-content div {
+.resumo-generico .experiencia-content div {
     background-color: #222;
     animation: ladoSecao .5s ease-in-out forwards;
     display: none;
@@ -479,11 +515,11 @@ main .sobre {
     position: relative;
 }
 
-.resume-generica .experiencia-content div.ativo {
+.resumo-generico .experiencia-content div.ativo {
     display: block;
 }
 
-.resume-generica .experiencia-content div::before {
+.resumo-generico .experiencia-content div::before {
     content: '';
     border-right: 30px solid transparent;
     border-bottom: 30px solid #222;
@@ -493,18 +529,18 @@ main .sobre {
     display: inline-block;
 }
 
-.resume-generica .experiencia-content div span {
+.resumo-generico .experiencia-content div span {
     color: #47c91f;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
-.resume-generica .experiencia-content div h3 {
+.resumo-generico .experiencia-content div h3 {
     font-family: 'Poppins', sans-serif;
     margin: 10px 0;
 }
 
-.resume-generica .experiencia-content div p {
+.resumo-generico .experiencia-content div p {
     color: #707070;
     font-size: 1.1rem;
 }
@@ -515,7 +551,7 @@ main .sobre {
 
 /* MEUS DIPLOMAS E CURSOS */
 
-.resume-generica .education-content div {
+.resumo-generico .education-content div {
     background-color: #222;
     padding: 40px;
     display: none;
@@ -533,7 +569,7 @@ main .sobre {
     justify-content: center;
 }
 
-.resume-generica .education-content div::before {
+.resumo-generico .education-content div::before {
     content: '';
     border-right: 30px solid transparent;
     border-bottom: 30px solid #222;
@@ -543,18 +579,18 @@ main .sobre {
     display: inline-block;
 }
 
-.resume-generica .education-content div span {
+.resumo-generico .education-content div span {
     color: #47c91f;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
-.resume-generica .education-content div h3 {
+.resumo-generico .education-content div h3 {
     font-family: 'Poppins', sans-serif;
     margin: 10px 0;
 }
 
-.resume-generica .education-content div p {
+.resumo-generico .education-content div p {
     color: #707070;
     font-size: 1.1rem;
 }
@@ -563,7 +599,7 @@ main .sobre {
     color: #3e3d3d;
 }
 
-.resume-generica .education-content div.ativo {
+.resumo-generico .education-content div.ativo {
     display: block;
 }
 
@@ -684,19 +720,19 @@ main .sobre {
 }
 
 @media (max-width: 1089px) {
-    .resume-generica, .experiencia-content, .education-content {
+    .resumo-generico, .experiencia-content, .education-content {
         justify-self: center;
         grid-column: 1/-1;
     }
 
-    .resume-generica .education {
+    .resumo-generico .education {
         grid-column: 1/-1;
         grid-row: 3;
         justify-self: center;
         margin: 30px 0;
     }
  
-    .resume-generica .experiencia{
+    .resumo-generico .experiencia{
         grid-column: 1/-1;
         grid-row: 1;
         justify-self: center;
@@ -785,13 +821,23 @@ main .sobre {
     cursor: pointer;
 }
 
+.projetos-armazenamento img:hover {
+    filter: blur(3px);
+}
+
 .projetos a { 
     background-color: #222;
     text-decoration: none;
     justify-self: center;
     padding: 20px 40px;
     border: 1px solid #333;
-    color: #707070;
+    border-radius: 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.projetos a:hover {
+    background-color: #333;
 }
 
 @keyframes animationImagemButton {
@@ -854,5 +900,5 @@ footer .footer-comercial {
     color: #fff;
     margin: 90px auto;
     font-size: 1.5rem;
-    font-family: 'Poppins';
 }
+
