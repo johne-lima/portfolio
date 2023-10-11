@@ -613,6 +613,7 @@ main .sobre {
 .skill-content ul {
     list-style-type: none;
     display: flex;
+    padding: 8px;
 }
 
 
