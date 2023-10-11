@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfólio</title>
 </head>
+
 <body>
     <header>
-        <h1>Johne <span>Lima</span></h1>
+        <h1 class="logo"><a href="#">Johne <span class="logo">Lima</span></a></h1>
         <nav>
             <ul aria-label="Navegação Primaria" class="navegacao-primaria">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Resumo</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#" class="active">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#resumo">Resumo</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
             <i class="fa-solid fa-bars"></i>
         </nav>
 
-    </header>
-    <section aria-label="Seção curriculo download Johne" class="section-div">
+    </header class="inicio" id="inicio">
+    <section aria-label="Seção curriculo download Johne" class="inicio">
         <div>
             <h2>Olá, eu sou</h2>
-            <h2 class="digitando"> Desenvolvedor Web e UX/UI Design</h2>
-            <p>Sou apaixonado por tecnologia e programação. Estou estudando Análise e Desenvolvimento de Sistemas, estou no 3º Semestre e no momento estou me aperfeiçoando em Javascript</p>
-            <a href="#">Download CV</a>
+            <h2 class="digitando"> Desenvolvedor Web e UX/UI Design!</h2>
+            <p>Sou apaixonado por tecnologia e programação. Estou estudando Análise e Desenvolvimento de Sistemas, estou
+                no 3º Semestre e no momento estou me aperfeiçoando em Javascript.</p>
+            <a href="">Download CV</a>
         </div>
         <img src="images/coding.png" alt="homem programando">
     </section>
     <main>
-        <article aria-label="Seção sobre mim" class="sobre">
+        <section aria-label="Seção sobre mim" class="sobre" id="sobre">
             <div class="sobre-titulo">
                 <h1>Sobre Mim</h1>
                 <p>Perfil Profissional - Tudo Sobre Mim</p>
@@ -46,10 +51,13 @@
             <div class="sobre-conteudo">
                 <div class="sobre-texto">
                     <h1>Olá, eu sou o Johne Lima</h1>
-                    <p>tenho 20 anos, moro na Zona Leste de São Paulo na região da Penha, estou no 3º Semestre do curso Análise e Desenvolvimento de Sistemas e estou em busca da minha primeira oportunidade como programador. 
-                    <br> 
-                    <br>
-                    Sou apaixonado por tecnologia e programação, estou me aperfeiçoando no Desenvolvimento web - front-end, gosto de aprender novas coisas, encarar desafios e ir em busca do meu futuro.
+                    <p>tenho 20 anos, moro na Zona Leste de São Paulo na região da Penha, estou no 3º Semestre do curso
+                        Análise e Desenvolvimento de Sistemas e estou em busca da minha primeira oportunidade como
+                        programador.
+                        <br>
+                        <br>
+                        Sou apaixonado por tecnologia e programação, estou me aperfeiçoando no Desenvolvimento web -
+                        front-end, gosto de aprender novas coisas, encarar desafios e ir em busca do meu futuro.
                     </p>
                 </div>
                 <div class="sobre-info">
@@ -59,7 +67,7 @@
                     <p> <i class="fa-solid fa-envelope"></i>Email: contatojohnelima@gmail.com</p>
                 </div>
             </div>
-        </article>
+        </section>
     </main>
     <section class="servicos">
         <div class="sobre-titulo">
@@ -76,38 +84,44 @@
                 <li>
                     <i class="fa-sharp fa-solid fa-pen-to-square fa-beat"></i>
                     <h3>Web Developer</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum laboriosam quos, reprehenderit sapiente inventore et natus?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum
+                        laboriosam quos, reprehenderit sapiente inventore et natus?</p>
                 </li>
                 <li>
                     <i class="fa-brands fa-html5 fa-beat"></i>
                     <h3>HTML5</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum laboriosam quos, reprehenderit sapiente inventore et natus?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum
+                        laboriosam quos, reprehenderit sapiente inventore et natus?</p>
                 </li>
                 <li>
                     <i class="fa-brands fa-css3-alt fa-beat"></i>
                     <h3>CSS3</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum laboriosam quos, reprehenderit sapiente inventore et natus?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum
+                        laboriosam quos, reprehenderit sapiente inventore et natus?</p>
                 </li>
                 <li>
                     <i class="fa-sharp fa-solid fa-code fa-beat"></i>
                     <h3>Javascript</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum laboriosam quos, reprehenderit sapiente inventore et natus?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum
+                        laboriosam quos, reprehenderit sapiente inventore et natus?</p>
                 </li>
                 <li>
                     <i class="fa-brands fa-solid fa-php fa-beat"></i>
                     <h3>PHP</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum laboriosam quos, reprehenderit sapiente inventore et natus?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum
+                        laboriosam quos, reprehenderit sapiente inventore et natus?</p>
                 </li>
                 <li>
                     <i class="fa-sharp fa-solid fa-pen-to-square fa-beat"></i>
                     <h3>Front-end</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum laboriosam quos, reprehenderit sapiente inventore et natus?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet , cumque at dolorum
+                        laboriosam quos, reprehenderit sapiente inventore et natus?</p>
                 </li>
-                
+
             </ul>
         </div>
     </section>
-    <div class="my-resume">
+    <section class="resumo" id="resumo">
         <div class="sobre-titulo">
             <h1>Meu Resumo</h1>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -117,7 +131,7 @@
                 <span></span>
             </div>
         </div>
-        <div class="resume-generica">
+        <div class="resumo-generico">
             <h2 class="experiencia"><i class="fa-solid fa-handshake"></i>EXPERIENCIA</h2>
             <div class="experiencia-content">
                 <div>
@@ -165,28 +179,28 @@
                 <div class="skill-content">
                     <h3>HTML 5</h3>
                     <ul>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                     </ul>
                 </div>
                 <div class="skill-content">
                     <h3>CSS 3</h3>
                     <ul>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                     </ul>
                 </div>
                 <div class="skill-content">
                     <h3>BOOTSTRAP</h3>
                     <ul>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
@@ -195,9 +209,9 @@
                 <div class="skill-content">
                     <h3>JAVASCRIPT</h3>
                     <ul>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                     </ul>
@@ -205,8 +219,8 @@
                 <div class="skill-content">
                     <h3>PHP</h3>
                     <ul>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
@@ -215,7 +229,7 @@
                 <div class="skill-content">
                     <h3>C</h3>
                     <ul>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
@@ -225,9 +239,9 @@
                 <div class="skill-content">
                     <h3>GIT</h3>
                     <ul>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
+                        <li><i class="fa-solid fa-star" style="color: #e1ff00;"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                         <li><i class="fa-sharp fa-regular fa-star"></i></li>
                     </ul>
@@ -259,8 +273,8 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <section class="projetos">
+    </section>
+    <section class="projetos" id="projetos">
         <div class="sobre-titulo">
             <h1>Meus Projetos</h1>
             <div aria-label="Seção apenas de ilustrações de botões">
@@ -278,30 +292,42 @@
             </ul>
         </div>
         <div class="projetos-armazenamento">
-            <ul aria-label="Navegação de projetos e websites"> 
+            <ul aria-label="Navegação de projetos e websites">
                 <li id="design"><img src="images/to-do-list.png" alt="to do list"></li>
                 <li id="design"><img src="images/calculadora.png" alt="calculadora"></li>
-                <li id="graphic"><img src="images/x-men.png" alt="projeto x-men"></li>
-                <li id="graphic"><img src="images/em constru.jpeg" alt="imagem para ser trocada depois"></li>
-                <li id="website"><img src="images/em constru.jpeg" alt="imagem para ser trocada depois"></li>
-                <li id="website"><img src="images/tela-de-login.png" alt="tela de login"></li>
+                <li id="graphic"><img src="images/gerador-de-senhas.png" alt="projeto x-men"></li>
+                <li id="graphic"><img src="images/tela-de-login.png" alt="imagem para ser trocada depois"></li>
+                <li id="website"><img src="images/x-men.png" alt="imagem para ser trocada depois"></li>
+                <li id="website"><img src="images/em constru.jpeg" alt="tela de login"></li>
                 <li id="website"><img src="images/em constru.jpeg" alt="imagem para ser trocada depois"></li>
                 <li id="website"><img src="images/em constru.jpeg" alt="imagem para ser trocada depois"></li>
             </ul>
         </div>
         <a href="https://github.com/johne-lima?tab=repositories" target="_blank">Mais Projetos</a>
     </section>
-    <footer>
-        <nav aria-label="navegação de links sociais">
-        <ul class="footer-sociais">
-            <li><a href=""><i class="fa-brands fa-github-alt"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
-    </nav>
-    <p class="footer-comercial">Todos os direitos reservados JOHNE LIMA &copy; - 2023</p>
-    </footer>
-    
+    <section class="contato" id="contato">
+        <footer>
+            <nav aria-label="navegação de links sociais">
+                <ul class="footer-sociais">
+                    <li>
+                        <a href="https://github.com/johne-lima" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/johne-lima-67a9b0274/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/limajk_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5511966358872" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="footer-comercial">JOHNE LIMA &copy; - 2023</p>
+        </footer>
+    </section>
+    <div id="btnTop"><i class="fa-solid fa-angle-up"></i></div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
