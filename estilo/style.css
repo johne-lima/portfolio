@@ -58,6 +58,7 @@ header .navegacao-primaria li {
 }
 
 header .navegacao-primaria li a {
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 1.3rem;
     font-weight: 600;
@@ -106,13 +107,13 @@ header .navegacao-primaria li a:hover::after {
 }
 
 .inicio div h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Young Serif', serif;   
+    letter-spacing: 2px; 
     color: #f7f7f7;
 }
 
 .inicio div p {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
     color: #f7f7f7;
 }
@@ -279,7 +280,7 @@ main .sobre {
 }
 
 .sobre-info p {
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 @keyframes sobeSecao {
