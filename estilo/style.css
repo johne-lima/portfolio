@@ -380,7 +380,7 @@ main .sobre {
         display: flex;
         justify-content: center;
         grid-column: 2/-1;
-        width: 50%;
+        width: 100%;
     }
 }
 
