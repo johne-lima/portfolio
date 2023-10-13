@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
-@import url('https://fonts.googleapis.com/css2? family= Berkshire+Swash & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 * {
     margin: 0;
@@ -320,7 +320,7 @@ main .sobre {
 /* RESPONSIVO */
 
 @media(max-width: 700px) {
-    .section-div img {
+    .inicio img {
         display: none;
 
     }
@@ -378,10 +378,17 @@ main .sobre {
 
     .projetos-armazenamento ul li {
         display: flex;
+        align-items: center;
         justify-content: center;
         grid-column: 2/-1;
         width: 100%;
     }
+
+    .projetos-armazenamento ul li span.ver-codigo a,
+    .projetos-armazenamento ul li span.ver-projeto a{
+        display: none;
+    }
+
 }
 
 /* SEÇÃO SERVICES */
@@ -427,8 +434,7 @@ main .sobre {
 .my-services ul li h3 {
     color: #fff;
     font-size: 1.6rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .my-services ul li p {
@@ -494,8 +500,9 @@ main .sobre {
 }
 
 .resumo-generico h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Young Serif', serif;    
+    font-size: 1.3rem;
+    letter-spacing: 2px;
     background-color: #359717;
     justify-self: start;
     padding: 10px;
@@ -517,6 +524,7 @@ main .sobre {
     grid-column: 2;
     grid-row: 1;
 }
+
 
 .experiencia-content ul {
     list-style-type: none;
@@ -628,11 +636,9 @@ main .sobre {
 
 .cursos {
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: start;
-    padding: 30px;
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -643,9 +649,10 @@ main .sobre {
 .my-skill h2 {
     padding: 10px 30px;
     border-radius: 3px;
-    background-color: #47c91f;
-    font-size: 1.5rem;
-    font-family: 'Poppins';
+    background-color: #308b14;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-family: 'Young Serif', serif;
     margin-bottom: 30px;
     justify-self: start;
 }
@@ -821,7 +828,7 @@ main .sobre {
 .projetos-armazenamento ul {
     display: grid;
     margin-top: 60px;
-    gap: 20px;
+    gap: 80px;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -842,11 +849,31 @@ main .sobre {
     cursor: pointer;
 }
 
+
+.projetos-armazenamento ul li span.ver-codigo a,
+.projetos-armazenamento ul li span.ver-projeto a{
+    position: relative;
+    top: 5%;
+    left: 1%;
+    padding: 10px;
+    color: white;
+    border: 1px solid #222;
+    background-color: #222;
+    border-radius: 10px;
+    margin: 2px;
+
+}
+
+.projetos-armazenamento ul li span a:hover {
+    border: 1px solid #333;
+    background-color: #333;
+}
+
 .projetos-armazenamento img:hover {
     filter: blur(3px);
 }
 
-.projetos a { 
+.projetos #mais-projetos { 
     background-color: #222;
     text-decoration: none;
     justify-self: center;
@@ -857,7 +884,7 @@ main .sobre {
     font-weight: bold;
 }
 
-.projetos a:hover {
+.projetos #mais-projetos:hover {
     background-color: #333;
 }
 
