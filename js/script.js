@@ -85,8 +85,8 @@ sobreMim()
 /*
 const listaAll = document.querySelector('.projetos-armazenamento ul li')
 const buttonGeral = document.querySelector('.projetos-modelos ul li')
-
 const buttonAll = document.querySelector('.projetos-modelos .all')
+
 const lt = Array.from(listaAll)
 const btnG = Array.from(buttonGeral)
 

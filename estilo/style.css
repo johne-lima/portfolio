@@ -25,7 +25,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000;
+    background-color: #0000009f;
     margin-top: 10px;
     padding: 10px;
     display: flex;
@@ -51,6 +51,10 @@ header .navegacao-primaria {
     display: flex;
     gap: 30px;
     align-items: center;
+}
+
+header .navegacao-primaria li {
+    list-style: none;
 }
 
 header .navegacao-primaria li a {
@@ -188,7 +192,7 @@ main .sobre {
 }
 
 .sobre-titulo p {
-    color: #707070;
+    color: #505050;
     font-size: 1.4rem;
     margin-bottom: 1rem;
     position: relative;
@@ -338,7 +342,7 @@ main .sobre {
     }
 
     header .navegacao-primaria.ativado {
-        background: linear-gradient(rgba(43, 42, 42, 0.548), rgba(22, 22, 22, 0.767));
+        background: linear-gradient(rgba(43, 42, 42, 0.37), rgba(22, 22, 22, 0.767));
         position: absolute;
         display: grid;
         top: 80px;
@@ -360,6 +364,23 @@ main .sobre {
 
     .sobre-conteudo {
         grid-column: 1/-1;
+    }
+
+    .projetos {
+        display: grid;
+        grid-column: 2/-8;
+    }
+
+    .projetos ul li{
+        display: none;
+    }
+    
+
+    .projetos-armazenamento ul li {
+        display: flex;
+        justify-content: center;
+        grid-column: 2/-1;
+        width: 50%;
     }
 }
 
